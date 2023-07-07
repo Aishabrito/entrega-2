@@ -1,0 +1,161 @@
+
+body {
+    position: relative;
+    background-image: url(../img/Foto_Fluxo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border-top: 2.5rem solid #191414;
+    padding-top: 2.8125rem; 
+    
+  }
+  
+  #background::before {
+    content: "";
+    position: absol;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    filter: blur(0.1875rem);
+    z-index: 1;
+    background-size: cover;
+  }
+  
+  #background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .login-box {
+    position: relative;
+    width: 25rem;
+    height: 52rem ;
+    padding: 2.5rem;
+    background-color: #0e0c0c;
+    border-radius: 0.5rem;
+    text-align: center;
+    z-index: 3;
+  }
+  
+  h1 {
+    margin-bottom: 1.25rem;
+    font-size: 2,5em;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Circular", Arial, sans-serif;
+  }
+  
+  .form-group {
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  label {
+    margin-bottom: 0.625rem;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.8em;
+    text-align: left;
+    width: 100%;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 0.625rem;
+    border-radius: 0.25rem;
+    border: none;
+    font-size: 1em;
+    align-self: flex-start;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 0.3125rem;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #1db954;
+    border: none;
+    border-radius: 1.125rem;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #1db954;
+    width: 100%;
+  }
+  
+  .continue-with-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.25rem;
+  }
+  
+  .continue-with-buttons button {
+    margin-bottom: 0.625rem;
+    padding: 0.75rem;
+    border: 0.0625rem solid #b8acac;
+    font-size: 1em;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    width: 100%;
+  }
+  
+  .continue-with-google {
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .continue-with-facebook {
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .continue-with-apple {
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .continue-with-phone {
+    background-color: transparent;
+    color: #ffffff;
+  }
+  
+  .error-message,
+  .success-message {
+    margin-top: 0.3125rem;
+    color: #fff;
+    font-size: 1em;
+  }
+  .additional-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.625rem;
+  }
+
+  .forgot-password-link,
+  .signup-link {
+    margin-bottom: 0.625rem; 
+  }
